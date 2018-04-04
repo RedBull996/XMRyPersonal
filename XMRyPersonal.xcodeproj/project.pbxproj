@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		296147992071F13100490BAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296147982071F13100490BAA /* AppDelegate.m */; };
-		2961479C2071F13100490BAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961479B2071F13100490BAA /* ViewController.m */; };
 		2961479F2071F13100490BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2961479D2071F13100490BAA /* Main.storyboard */; };
 		296147A12071F13100490BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296147A02071F13100490BAA /* Assets.xcassets */; };
 		296147A42071F13100490BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296147A22071F13100490BAA /* LaunchScreen.storyboard */; };
 		296147A72071F13100490BAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 296147A62071F13100490BAA /* main.m */; };
+		296147B2207212A800490BAA /* BTRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 296147B1207212A800490BAA /* BTRouter.m */; };
+		B938530DE33DE3D51A65234D /* libPods-XMRyPersonal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A830647628CEA861A19A581 /* libPods-XMRyPersonal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		296147942071F13100490BAA /* XMRyPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMRyPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296147972071F13100490BAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		296147982071F13100490BAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2961479A2071F13100490BAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2961479B2071F13100490BAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2961479E2071F13100490BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		296147A02071F13100490BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296147A32071F13100490BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		296147A52071F13100490BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296147A62071F13100490BAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		296147B0207212A800490BAA /* BTRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRouter.h; sourceTree = "<group>"; };
+		296147B1207212A800490BAA /* BTRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRouter.m; sourceTree = "<group>"; };
+		4A830647628CEA861A19A581 /* libPods-XMRyPersonal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMRyPersonal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F10A487DDB4B48BB8ADE3C6 /* Pods-XMRyPersonal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMRyPersonal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMRyPersonal/Pods-XMRyPersonal.debug.xcconfig"; sourceTree = "<group>"; };
+		6B017D26F46A10CB77FF2712 /* Pods-XMRyPersonal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMRyPersonal.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMRyPersonal/Pods-XMRyPersonal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B938530DE33DE3D51A65234D /* libPods-XMRyPersonal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1994CCEE73F0DABC5737BBF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A830647628CEA861A19A581 /* libPods-XMRyPersonal.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2961478B2071F13100490BAA = {
 			isa = PBXGroup;
 			children = (
 				296147962071F13100490BAA /* XMRyPersonal */,
 				296147952071F13100490BAA /* Products */,
+				77831DE9D61F2C0EC8FACA03 /* Pods */,
+				1994CCEE73F0DABC5737BBF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +73,10 @@
 		296147962071F13100490BAA /* XMRyPersonal */ = {
 			isa = PBXGroup;
 			children = (
+				296147AE2072127700490BAA /* CommonTool */,
+				296147AD2072116B00490BAA /* New Group */,
 				296147972071F13100490BAA /* AppDelegate.h */,
 				296147982071F13100490BAA /* AppDelegate.m */,
-				2961479A2071F13100490BAA /* ViewController.h */,
-				2961479B2071F13100490BAA /* ViewController.m */,
 				2961479D2071F13100490BAA /* Main.storyboard */,
 				296147A02071F13100490BAA /* Assets.xcassets */,
 				296147A22071F13100490BAA /* LaunchScreen.storyboard */,
@@ -71,6 +86,39 @@
 			path = XMRyPersonal;
 			sourceTree = "<group>";
 		};
+		296147AD2072116B00490BAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		296147AE2072127700490BAA /* CommonTool */ = {
+			isa = PBXGroup;
+			children = (
+				296147AF2072129400490BAA /* Router */,
+			);
+			path = CommonTool;
+			sourceTree = "<group>";
+		};
+		296147AF2072129400490BAA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				296147B0207212A800490BAA /* BTRouter.h */,
+				296147B1207212A800490BAA /* BTRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		77831DE9D61F2C0EC8FACA03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F10A487DDB4B48BB8ADE3C6 /* Pods-XMRyPersonal.debug.xcconfig */,
+				6B017D26F46A10CB77FF2712 /* Pods-XMRyPersonal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 296147AA2071F13100490BAA /* Build configuration list for PBXNativeTarget "XMRyPersonal" */;
 			buildPhases = (
+				35148708062A0B7D6510E47B /* [CP] Check Pods Manifest.lock */,
 				296147902071F13100490BAA /* Sources */,
 				296147912071F13100490BAA /* Frameworks */,
 				296147922071F13100490BAA /* Resources */,
+				1D6A9DC9EC77244B8097E011 /* [CP] Embed Pods Frameworks */,
+				43A246506E150DDC5CF64E8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +188,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6A9DC9EC77244B8097E011 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMRyPersonal/Pods-XMRyPersonal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35148708062A0B7D6510E47B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMRyPersonal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43A246506E150DDC5CF64E8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XMRyPersonal/Pods-XMRyPersonal-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMRyPersonal/Pods-XMRyPersonal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		296147902071F13100490BAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2961479C2071F13100490BAA /* ViewController.m in Sources */,
 				296147A72071F13100490BAA /* main.m in Sources */,
 				296147992071F13100490BAA /* AppDelegate.m in Sources */,
+				296147B2207212A800490BAA /* BTRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +381,7 @@
 		};
 		296147AB2071F13100490BAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F10A487DDB4B48BB8ADE3C6 /* Pods-XMRyPersonal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +397,7 @@
 		};
 		296147AC2071F13100490BAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B017D26F46A10CB77FF2712 /* Pods-XMRyPersonal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
